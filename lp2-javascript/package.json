@@ -1,0 +1,13 @@
+{
+  "name": "lp2-service",
+  "version": "1.0.0",
+  "description": "Servicio LP2 con MySQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "mysql2": "^3.6.0"
+  }
+}

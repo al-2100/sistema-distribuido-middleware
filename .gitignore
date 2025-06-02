@@ -1,0 +1,79 @@
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pyo
+*.pyd
+*.pyc
+.Python
+pip-wheel-metadata/
+.env
+.venv
+venv/
+ENV/
+env/
+.idea/
+
+# IPython/Jupyter
+.ipynb_checkpoints
+
+# PyInstaller
+*.spec
+
+# =====================
+# JavaScript / Node.js
+# =====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+.eslintcache
+
+# VSCode / IDEs
+.vscode/
+
+# =====================
+# Java
+# =====================
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.tmp
+hs_err_pid*
+target/
+bin/
+build/
+.gradle/
+.project
+.classpath
+.settings/
+.idea/
+*.iml
+
+# =====================
+# OS/General
+# =====================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp

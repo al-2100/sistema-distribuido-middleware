@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:13
+    container_name: postgres-bd1
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+      POSTGRES_DB: bd1
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - lp1-network
+
+  lp1-service:
+    build: .
+    container_name: lp1-python-service
+    depends_on:
+      - postgres-db
+    environment:
+      RABBITMQ_HOST: 192.168.100.190
+      DB_HOST: postgres-db
+    networks:
+      - lp1-network
+    volumes:
+      - ./config.json:/app/config.json
+
+volumes:
+  postgres_data:
+
+networks:
+  lp1-network:
+    driver: bridge

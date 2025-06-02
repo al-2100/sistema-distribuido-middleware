@@ -1,0 +1,15 @@
+{
+  "rabbitmq": {
+    "host": "192.168.100.190",
+    "port": 5672,
+    "username": "admin",
+    "password": "admin123"
+  },
+  "database": {
+    "host": "postgres-db",
+    "port": 5432,
+    "database": "bd1",
+    "user": "postgres",
+    "password": "postgres123"
+  }
+}

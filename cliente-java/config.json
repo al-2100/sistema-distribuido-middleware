@@ -1,0 +1,12 @@
+{
+  "rabbitmq": {
+    "host": "192.168.100.190",
+    "port": 5672,
+    "username": "admin",
+    "password": "admin123"
+  },
+  "client": {
+    "threadPoolSize": 10,
+    "timeoutSeconds": 30
+  }
+}

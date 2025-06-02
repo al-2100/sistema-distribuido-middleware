@@ -1,0 +1,15 @@
+{
+  "rabbitmq": {
+    "host": "192.168.100.190",
+    "port": 5672,
+    "username": "admin",
+    "password": "admin123"
+  },
+  "database": {
+    "host": "mysql-db",
+    "port": 3306,
+    "database": "bd2",
+    "user": "root",
+    "password": "mysql123"
+  }
+}
