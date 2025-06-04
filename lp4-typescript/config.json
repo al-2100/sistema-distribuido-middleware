@@ -1,0 +1,12 @@
+{
+  "rabbitmq": {
+    "host": "rabbitmq_service", 
+    "port": 5672,
+    "username": "admin",
+    "password": "admin123",
+    "exchangeName": "validation"
+  },
+  "client": {
+    "timeoutSeconds": 60
+  }
+}

@@ -13,7 +13,7 @@ services:
     ports:
       - "5432:5432"
     networks:
-      - lp1-network
+      -  mi_red_compartida
 
   lp1-service:
     build: .
@@ -21,10 +21,10 @@ services:
     depends_on:
       - postgres-db
     environment:
-      RABBITMQ_HOST: 192.168.100.190
+      RABBITMQ_HOST: rabbitmq_service
       DB_HOST: postgres-db
     networks:
-      - lp1-network
+      -  mi_red_compartida
     volumes:
       - ./config.json:/app/config.json
 
@@ -32,5 +32,6 @@ volumes:
   postgres_data:
 
 networks:
-  lp1-network:
-    driver: bridge
+   mi_red_compartida:
+    external:
+      name: mi_red_compartida # Nombre de la red externa creada previamente
