@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  lp4_client_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lp4_typescript_client_standalone
+    environment:
+      - RABBITMQ_HOST=rabbitmq_service # Nombre del servicio RabbitMQ en la red compartida
+      - RABBITMQ_USER=admin
+      - RABBITMQ_PASS=admin123
+    networks:
+      - mi_red_compartida
+    stdin_open: true
+    tty: true
+
+networks:
+  mi_red_compartida:
+    external:
+      name: mi_red_compartida

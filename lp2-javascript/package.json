@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "amqplib": "^0.10.3",
+    "lp2-service": "file:",
     "mysql2": "^3.6.0"
   }
 }

@@ -1,6 +1,6 @@
 {
   "rabbitmq": {
-    "host": "192.168.100.190",
+    "host": "192.168.205.1",
     "port": 5672,
     "username": "admin",
     "password": "admin123"
